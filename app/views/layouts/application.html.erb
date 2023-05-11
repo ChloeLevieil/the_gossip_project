@@ -11,18 +11,19 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <nav class="navbar navbar-expand-lg bg-danger">
+  <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
+    <%= link_to"", root_path, class:"nav-link" %>
     <%= image_tag("logo_TGP.png", alt: "logo TGP", class:"img_logo_nav") %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="http://localhost:3000/home">Home</a>
-        <a class="nav-link" href="http://localhost:3000/team">L'équipe</a>
-        <a class="nav-link" href="http://localhost:3000/contact">Contact</a>
-        <a class="nav-link" href="http://localhost:3000/welcome">Bienvenue</a>
+        <a class="nav-link" href="<%= new_gossip_path %>">Creer ton scoop</a>
+        <a class="nav-link" href="<%= team_path %>">L'équipe</a>
+        <a class="nav-link" href="<%= contact_path %>">Contact</a>
+
       </div>
     </div>
   </div>

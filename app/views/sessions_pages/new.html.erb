@@ -1,0 +1,26 @@
+<main class= "container">
+<h1> Identification </h1>
+<p> Hey petite Barbapapa rose à paillettes, si tu veux avoir accès à tous les potins, il va falloir te connecter :</p>
+
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+
+
+      <%= label_tag 'First name' %>
+      <%= text_field_tag 'first name' %>
+      <br /> <br />
+
+      <%= label_tag 'Email' %>
+      <%= text_field_tag 'email' %>
+      <br /> <br />
+
+      <%= label_tag 'Password_digest' %>
+      <%= text_field_tag 'password digest' %>
+      <br /> <br />
+
+      <%= submit_tag "Inscription" %>
+
+  </form>
+    <% end %>
+    </main>

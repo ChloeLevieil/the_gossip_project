@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.0"
 
-gem "faker"
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
 gem "table_print"
 
@@ -74,3 +74,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "bcrypt", "~> 3.1"

@@ -1,0 +1,2 @@
+module SessionsPageHelper
+end
